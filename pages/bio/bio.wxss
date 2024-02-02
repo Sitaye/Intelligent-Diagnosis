@@ -1,0 +1,8 @@
+/* pages/bio/bio.wxss */
+  #bio {
+    height: 32rem;
+    background-color: lightgreen;
+  }
+  #bio UserBioHeader{
+    margin-top: 10px;
+  }

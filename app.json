@@ -1,12 +1,40 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/submit/submit",
+    "pages/bio/bio"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarTitleText": "智慧导诊",
+    "navigationBarBackgroundColor": "#ffffff",
+    "enablePullDownRefresh": true,
+    "backgroundColorTop": "#ffffff",
+    "backgroundColorBottom": "#ffffff"
+  },
+  "tabBar": {
+    "selectedColor": "#00B386",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "./image/message-comments.png",
+        "selectedIconPath": "./image/message-comments-green.png"
+      },
+      {
+        "pagePath": "pages/submit/submit",
+        "text": "发布",
+        "iconPath": "./image/add-btn.png",
+        "selectedIconPath": "./image/add-btn-green.png"
+      },
+      {
+        "pagePath": "pages/bio/bio",
+        "text": "个人中心",
+        "iconPath": "./image/customer-center.png",
+        "selectedIconPath": "./image/customer-center-green.png"
+      }
+    ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",
