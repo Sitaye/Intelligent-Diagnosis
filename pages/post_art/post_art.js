@@ -1,18 +1,13 @@
-// pages/bio/bio.js
+// pages/post_art/post_art.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isShow: false
+
   },
 
-  setIsShow(){
-    this.setData({
-      isShow: true
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

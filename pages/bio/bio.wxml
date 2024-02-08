@@ -1,2 +1,61 @@
 <!--pages/bio/bio.wxml-->
-<text>这是个人中心</text>
+<view class="beforeLogin" hidden="{{isShow}}">
+  <image src="/image/login.png" mode="scaleToFill" class="defaultAvatar"/>
+  <button class="logbutton" bindtap="setIsShow">一键登录</button>
+</view>
+<view class="afterLogin" hidden="{{!isShow}}">
+  <view class="header">
+    <image src="/image/user.png" mode="scaleToFill" class="userAvatar"/>
+    <view>
+      <text class="username">Admin</text>
+      <view class="education">
+        <text style="display: block;">哈尔滨工程大学</text>
+        <text>本科生 </text>-
+        <text>计算机工程与技术</text>
+      </view>    
+    </view>
+  </view>
+  <view class="userinfo">
+    <view class="panel">
+      <view class="panel-item">
+        <text class="number">114</text>
+        <text>关注</text>
+      </view>
+      <view class="panel-item">
+        <text class="number">514</text>
+        <text>粉丝</text>
+      </view>
+      <view class="panel-item">
+        <text class="number">1919</text>
+        <text>获赞</text>
+      </view>
+      <view class="panel-item">
+        <text class="number">810</text>
+        <text>收藏</text>
+      </view>
+    </view>
+    <view class="settings">
+      <view class="setting-item">
+        <image src="/image/customer.png" mode="#" class="setting-icon"/>
+        <text>基础信息</text>
+        <navigator url="#">></navigator>
+      </view>
+      <view class="setting-item">
+        <image src="/image/edit.png" mode="#" class="setting-icon"/>
+        <text>系统设置</text>
+        <navigator url="#">></navigator>
+      </view>
+      <view class="setting-item">
+        <image src="/image/info.png" mode="#" class="setting-icon"/>
+        <text>关于</text>
+        <navigator url="#">></navigator>
+      </view>
+      <view class="setting-item">
+        <image src="/image/quit.png" mode="#" class="setting-icon"/>
+        <text>退出登录</text>
+        <navigator url="#">></navigator>
+      </view>
+
+    </view>
+  </view>
+</view>
